@@ -8,10 +8,10 @@ fn main() {
     println!("Hello, world!");
 
     println!("------- 64 Bits -------");
-    let lynx64: i64 = 64000;
+    let lynx64: u64 = 64000;
     println!("64bit : {}", lynx64);
 
-    let lynx32: i32 = 32000;
+    let lynx32: u32 = 32000;
     println!("32bit : {}", lynx32);
 
     println!("------- MATH -------");
@@ -37,5 +37,17 @@ fn main() {
     println!("Before Bool : {}", logical);
     logical = false;
     println!("After Bool : {}", logical);
+    println!("10 + 20 = {}", 10i32 + 20i32);
+    println!("10 + 20 = {}", 10u32 + 20u32);
+    println!("10 + 20 = {}", 10 + 20u32);
+    println!("10 + 20 = {}", 10i32 + 20);
+    println!("10 + 20 = {}", 10 + 20);
+
+    println!("Hex Value : {}", (0x16 + 0x16) / 0x16u32);
+    println!("One million is written as {}", 1_000_000u32);
+
+    let tuple = (1u32, "lynx", true);
+    println!("First value of tuple = {}", tuple.0);
+    println!("First value of tuple = {}", tuple.1);
 
 }
