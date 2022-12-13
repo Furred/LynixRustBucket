@@ -30,4 +30,12 @@ fn main() {
     lynx = 500;
 
     println!("{}", lynx);
+
+    println!("------- BOOL -------");
+
+    let mut logical: bool = true;
+    println!("Before Bool : {}", logical);
+    logical = false;
+    println!("After Bool : {}", logical);
+
 }
